@@ -37,6 +37,7 @@ header {
   float: left;
   margin-left: 5px;
   margin-top: 10px;
+  border-image-outset: 10px white;
 }
 body {
   font-family: monospace;
@@ -49,7 +50,7 @@ body {
   position: absolute;
   width: 1200px;
   margin-left: 50px;
-  margin-top: 0px;
+  margin-top: 40px;
 }
 
 h1 {
@@ -57,7 +58,7 @@ h1 {
   text-transform: uppercase;
   font-size: 50px;
   text-align: left;
-  margin-top: 80px;
+  margin-top: 50px;
   padding-left: 300px;
 }
 h2 {
@@ -111,12 +112,7 @@ p {
   background-color: rgb(230, 142, 0);
   transition: all 0.5s ease-in;
 }
-.hero2 {
-  position: absolute;
-  width: 1200px;
-  margin-left: 700px;
-  margin-right: 50px;
-}
+
 footer {
   color: rgb(174, 255, 198);
   font-size: 15px;
