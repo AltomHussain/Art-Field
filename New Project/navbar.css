@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav {
+  float: right;
+  list-style: none;
+  margin-top: 15px;
+}
+.navbar-nav li {
+  display: inline-block;
+}
+.navbar-nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+}
+.navbar-nav li.active a {
+  border: 1px solid white;
+}
+.navbar-nav li a:hover {
+  border: 1px solid white;
+}
+.navbar {
+  background-color: rgb(109, 4, 109);
+  overflow: hidden;
+  height: 65px;
+}
+
+.navbar a {
+  float: left;
+  padding: 20px 10px;
+  font-size: 30px;
+}
+
+.navbar-nav a:hover {
+  background-color: rgb(195, 0, 179);
+  color: rgb(255, 255, 255);
+}
