@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
 }
-
 .navbar-nav {
   float: right;
   list-style: none;
   margin-top: 15px;
 }
 .navbar-nav li {
-  display: inline-block;
+  display: inline;
 }
 .navbar-nav li a {
   color: white;
@@ -24,8 +23,26 @@
 .navbar-nav li a:hover {
   border: 1px solid white;
 }
+
+.navbar {
+  background-color: rgb(109, 4, 109);
+  overflow: hidden;
+  height: 65px;
+}
+
+.navbar a {
+  float: left;
+  padding: 20px 10px;
+  font-size: 30px;
+}
+
+.navbar-nav a:hover {
+  background-color: rgb(195, 0, 179);
+  color: rgb(255, 255, 255);
+}
+
 .logo img {
-  width: 180px;
+  width: 120px;
   height: auto;
   float: right;
   margin-top: 15px;
@@ -47,11 +64,10 @@ body {
 
 .hero {
   margin: 10px auto 0 auto;
-  line-height: 1.65;
+  line-height: 1.5;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .para {
   min-width: 300px;
@@ -109,12 +125,13 @@ p {
 
 .button {
   margin-top: 20px;
-  margin-left: 60px;
+  margin-left: 100px;
+  align-items: center;
 }
 
 .btn {
   border: 1px solid white;
-  padding: 10px 30px;
+  padding: 10px 10px;
   color: white;
   text-decoration: none;
   margin-right: 20px;
@@ -141,7 +158,7 @@ p {
 footer {
   font-family: Arial, Helvetica, sans-serif;
   padding: 8px;
-  margin: 20px;
+  margin: 30px;
   align-items: center;
 }
 footer a {
@@ -163,17 +180,6 @@ a:hover {
   height: 65px;
 }
 
-.navbar a {
-  float: left;
-  padding: 20px 10px;
-  font-size: 30px;
-}
-
-.navbar-nav a:hover {
-  background-color: rgb(195, 0, 179);
-  color: rgb(255, 255, 255);
-}
-
 .side-nav {
   height: 100%;
   width: 0;
@@ -188,7 +194,7 @@ a:hover {
   transition: 1s;
 }
 .side-nav a {
-  padding: 30px 15px 0px 60px;
+  padding: 30px 15px 10px 60px;
   text-decoration: none;
   font-size: 15px;
   color: rgb(170, 170, 170);
@@ -213,29 +219,57 @@ a:hover {
     ),
     url(images/painting.jpg);
   padding: 30px;
-  height: 100%;
+  height: 80%;
   position: absolute;
-  flex: 1;
-  z-index: 1;
-  top: 200px;
+  top: 170px;
   right: 10px;
   opacity: 0.9;
-  overflow-x: hidden;
 }
 .main a {
   color: white;
   font-size: 20px;
   font-family: monospace;
   text-transform: uppercase;
-  padding: 20px 10px 30px 10px;
+  padding: 20px 10px 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
 }
 @media (max-width: 600px) {
   .hero {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+  }
+  .sidebar {
+    background-image: linear-gradient(
+        rgba(31, 0, 0, 0.5),
+        rgba(211, 208, 25, 0.5)
+      ),
+      url(images/painting.jpg);
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    position: static;
+    top: 10px;
+    justify-content: center;
+    margin: 20px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main a {
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
   }
 }
