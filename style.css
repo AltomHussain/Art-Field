@@ -253,8 +253,7 @@ a:hover {
       ),
       url(images/painting.jpg);
     padding: 20px;
-    width: 350px;
-    display: flex;
+    height: 30px;
     position: static;
     top: 10px;
     justify-content: center;
